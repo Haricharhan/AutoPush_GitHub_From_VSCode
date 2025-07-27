@@ -1,0 +1,34 @@
+# === 1. Navigate to your project directory ===
+cd path/to/your/project
+
+# === 2. Initialize Git (if not already initialized) ===
+git init
+
+# === 3. Add the remote origin (replace with your actual GitHub repo URL) ===
+git remote add origin https://github.com/your-username/your-repo-name.git
+
+# === 4. Set the default branch name to 'main' (recommended) ===
+git branch -M main
+
+# === 5. Stage all files ===
+git add .
+
+# === 6. Make your first commit ===
+git commit -m "Initial commit"
+
+# === 7. Push to GitHub ===
+git push -u origin main
+
+# === 8. Run the Python script that automates pushing (after edits are made) ===
+python auto_push_script.py
+
+# === 9. Optional: Schedule the script using Task Scheduler (Windows) ===
+# - Open Task Scheduler
+# - Create Basic Task
+# - Set Trigger: Daily / On Idle / On Logon
+# - Action: Start a Program
+#   - Program/script: python
+#   - Add arguments: path/to/auto_push_script.py
+
+# === 10. (Optional) Create a blank log file if script logs to it ===
+notepad log.txt  # or just let the script create it automatically
